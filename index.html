@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tejuncho · Tejidos & Accesorios a Crochet Hechos a Mano</title>
+  <meta name="description" content="Tejuncho — emprendimiento colombiano de tejidos a crochet, amigurumis y accesorios hechos a mano. Piezas únicas creadas desde cero, personalizadas bajo encargo. Envíos a Colombia y el mundo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="img/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ====== BARRA DE ANUNCIO ====== -->
+  <div class="announce-bar">
+    <div class="announce-track">
+      <span>🧶 Hecho a mano en Colombia</span><span>✦</span>
+      <span>🚚 Envíos a todo el país y acuerdos internacionales</span><span>✦</span>
+      <span>💬 Pedidos y personalizados por WhatsApp</span><span>✦</span>
+      <span>🧶 Hecho a mano en Colombia</span><span>✦</span>
+      <span>🚚 Envíos a todo el país y acuerdos internacionales</span><span>✦</span>
+      <span>💬 Pedidos y personalizados por WhatsApp</span><span>✦</span>
+    </div>
+  </div>
+
+  <!-- ====== HEADER / NAV ====== -->
+  <header class="site-header" id="top">
+    <div class="nav-inner">
+      <a href="#top" class="brand">
+        <img src="img/logo.png" alt="Logo Tejuncho" class="brand-logo" />
+        <span class="brand-text">Tejuncho</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#personalizados">Personalizados</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#redes">Redes</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Abrir carrito de compras">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====== HERO / INICIO ====== -->
+  <section class="hero" id="inicio">
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="hero-content">
+      <span class="eyebrow">Hecho a mano en Colombia 🧶</span>
+      <h1>Cada punto cuenta<br>una <em>historia</em></h1>
+      <p class="hero-lead">
+        Tejidos a crochet, amigurumis y accesorios creados desde cero, con vida,
+        creatividad y un detalle artesanal pensado solo para ti.
+      </p>
+      <div class="hero-cta">
+        <a href="#catalogo" class="btn btn-primary">Ver catálogo</a>
+        <a href="#personalizados" class="btn btn-ghost">Pedir personalizado</a>
+      </div>
+      <div class="hero-badges">
+        <span>✦ Piezas únicas</span>
+        <span>✦ Encargos personalizados</span>
+        <span>✦ Envíos nacionales e internacionales</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="img/producto-novios.jpg" alt="Amigurumi de novios personalizados tejidos a crochet" />
+      <div class="hero-visual-tag">Amor tejido a mano</div>
+    </div>
+  </section>
+
+  <!-- ====== TIRA DE VALORES ====== -->
+  <div class="value-strip">
+    <div class="value-item"><strong>Desde cero</strong><span>Cada pieza nace de una idea, no de un molde</span></div>
+    <div class="value-item"><strong>A tu medida</strong><span>Personalizamos colores, figuras y detalles</span></div>
+    <div class="value-item"><strong>Con historia</strong><span>Arte hecho a mano que acompaña momentos</span></div>
+    <div class="value-item"><strong>Pago fácil</strong><span>Finaliza por WhatsApp o directo en la página</span></div>
+  </div>
+
+  <!-- ====== CATÁLOGO / PRODUCTOS ====== -->
+  <section class="section" id="catalogo">
+    <div class="section-head">
+      <span class="eyebrow center">Catálogo</span>
+      <h2>Nuestras creaciones</h2>
+      <p>Explora las piezas disponibles en stock y agrégalas a tu carrito.
+         ¿Buscas algo distinto? También tejemos bajo encargo.</p>
+    </div>
+
+    <div class="filters" id="filters">
+      <button class="filter-chip is-active" data-filter="all">Todos</button>
+      <button class="filter-chip" data-filter="amigurumi">Amigurumis</button>
+      <button class="filter-chip" data-filter="llavero">Llaveros</button>
+      <button class="filter-chip" data-filter="religioso">Religiosos</button>
+      <button class="filter-chip" data-filter="accesorio">Accesorios</button>
+      <button class="filter-chip" data-filter="gold">Cover Gold &amp; Acero</button>
+      <button class="filter-chip" data-filter="temporada">Temporada</button>
+    </div>
+
+    <div class="product-grid" id="productGrid"><!-- productos inyectados por JS --></div>
+  </section>
+
+  <!-- ====== PERSONALIZADOS ====== -->
+  <section class="section section-alt" id="personalizados">
+    <div class="custom-wrap">
+      <div class="custom-info">
+        <span class="eyebrow">Personalizados</span>
+        <h2>Un detalle único,<br>hecho para ti</h2>
+        <p>
+          ¿Quieres regalar algo que nadie más tenga? Creamos amigurumis, ramos de
+          flores eternas, bolsos, blusas y recuerdos tejidos a tu gusto: elige el
+          personaje, los colores y ese detalle especial que lo hace tuyo.
+        </p>
+        <ul class="custom-list">
+          <li>Amigurumis de personas, mascotas y personajes</li>
+          <li>Ramos de flores tejidas que nunca se marchitan</li>
+          <li>Bolsos, blusas y accesorios a tu medida</li>
+          <li>Recuerdos para bodas, bautizos y fechas especiales</li>
+        </ul>
+        <p class="custom-note">Cuéntanos tu idea y la hacemos realidad ✨</p>
+      </div>
+
+      <form class="custom-form" id="customForm">
+        <h3>Cuéntanos tu idea</h3>
+        <label>Tu nombre
+          <input type="text" name="nombre" required placeholder="Ej: María Fernanda" />
+        </label>
+        <label>¿Qué te gustaría encargar?
+          <select name="tipo" required>
+            <option value="">Selecciona una opción</option>
+            <option>Amigurumi personalizado</option>
+            <option>Ramo de flores tejidas</option>
+            <option>Bolso tejido</option>
+            <option>Blusa tejida</option>
+            <option>Recuerdo / detalle especial</option>
+            <option>Otro</option>
+          </select>
+        </label>
+        <label>Descríbelo con tus palabras
+          <textarea name="detalle" rows="4" required placeholder="Colores, personaje, tamaño, fecha en que lo necesitas..."></textarea>
+        </label>
+        <button type="submit" class="btn btn-whatsapp full">
+          <span class="wa-ico" aria-hidden="true"></span> Enviar por WhatsApp
+        </button>
+        <small>Se abrirá WhatsApp con tu mensaje listo para enviar.</small>
+      </form>
+    </div>
+
+    <div class="encargo-showcase">
+      <h3 class="encargo-title">También tejemos bajo encargo</h3>
+      <p class="encargo-sub">Piezas más grandes que hacemos especialmente para ti. Escríbenos para cotizar la tuya.</p>
+      <div class="encargo-grid">
+        <article class="encargo-card">
+          <div class="encargo-art art-ramo" aria-hidden="true">
+            <span class="flor f1"></span><span class="flor f2"></span><span class="flor f3"></span>
+            <span class="tallo"></span>
+          </div>
+          <h4>Ramos de flores tejidas</h4>
+          <p>Flores que nunca se marchitan, en los colores que ames. Ideales para regalar.</p>
+          <a class="encargo-link" href="https://wa.me/573207174673?text=Hola%20Tejuncho%2C%20quiero%20cotizar%20un%20ramo%20de%20flores%20tejidas%20🌷" target="_blank" rel="noopener">Cotizar por WhatsApp →</a>
+        </article>
+        <article class="encargo-card">
+          <div class="encargo-art art-bolso" aria-hidden="true">
+            <span class="bolso-cuerpo"></span><span class="bolso-asa"></span>
+          </div>
+          <h4>Bolsos tejidos</h4>
+          <p>Bolsos con figuras y diseños propios, resistentes y con muchísimo estilo.</p>
+          <a class="encargo-link" href="https://wa.me/573207174673?text=Hola%20Tejuncho%2C%20quiero%20cotizar%20un%20bolso%20tejido%20👜" target="_blank" rel="noopener">Cotizar por WhatsApp →</a>
+        </article>
+        <article class="encargo-card">
+          <div class="encargo-art art-blusa" aria-hidden="true">
+            <span class="blusa-cuerpo"></span><span class="blusa-manga izq"></span><span class="blusa-manga der"></span>
+          </div>
+          <h4>Blusas tejidas</h4>
+          <p>Prendas a tu medida, tejidas punto a punto para que sean únicas como tú.</p>
+          <a class="encargo-link" href="https://wa.me/573207174673?text=Hola%20Tejuncho%2C%20quiero%20cotizar%20una%20blusa%20tejida%20🧶" target="_blank" rel="noopener">Cotizar por WhatsApp →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FRANJA ESTILO DE VIDA ====== -->
+  <section class="lifestyle">
+    <div class="lifestyle-media">
+      <img src="img/lifestyle-flor.jpg" alt="Flor tejida usada como accesorio en el cabello" loading="lazy" />
+    </div>
+    <div class="lifestyle-text">
+      <span class="eyebrow">Para llevar contigo</span>
+      <h2>Detalles que te acompañan a todas partes</h2>
+      <p>Desde una flor en el cabello hasta el amigurumi de tu personaje favorito.
+         Cada pieza está pensada para durar y para hacerte sonreír cada vez que la usas.</p>
+      <a href="#catalogo" class="btn btn-primary">Explorar el catálogo</a>
+    </div>
+  </section>
+
+  <!-- ====== DESTACADOS (PRODUCTOS) ====== -->
+  <section class="section" id="productos">
+    <div class="section-head">
+      <span class="eyebrow center">Lo más querido</span>
+      <h2>Favoritos de Tejuncho</h2>
+      <p>Una muestra del cariño con el que tejemos cada pieza.</p>
+    </div>
+    <div class="highlight-grid" id="highlightGrid"><!-- inyectado por JS --></div>
+  </section>
+
+  <!-- ====== NOSOTROS / HISTORIA ====== -->
+  <section class="section section-story" id="nosotros">
+    <div class="story-wrap">
+      <div class="story-media">
+        <img src="img/producto-virgen-cuadro.jpg" alt="Cuadro tejido de la Virgen con flores y luces" />
+      </div>
+      <div class="story-text">
+        <span class="eyebrow">Nuestra historia</span>
+        <h2>Tejuncho nació de un aprendizaje de amor</h2>
+        <p>
+          Todo empezó con las manos de una abuela enseñando a tejer: primero bolsos
+          sencillos, tejidos básicos, sin figuras. Un aprendizaje pausado, hecho de
+          paciencia y compañía.
+        </p>
+        <p>
+          Cuando su abuela partió, ella no soltó la aguja. Tejer se volvió su manera
+          de entretenerse y de mantener viva esa enseñanza. Pero vio que podía ir más
+          allá: con tutoriales aprendió a crear bolsos con figuras, a diseñar sus
+          propias formas y a darles vida de otra manera.
+        </p>
+        <p>
+          Así siguió escalando, hasta llegar a los amigurumis. Y de todo ese camino
+          nació <strong>Tejuncho</strong>: la idea de que cada producto tenga vida,
+          creatividad, amor y un detalle artesanal personalizado, capaz de contar y
+          acompañar historias.
+        </p>
+        <div class="story-signature">Con cariño, Tejuncho 🧶</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACTO ====== -->
+  <section class="section section-alt" id="contacto">
+    <div class="section-head">
+      <span class="eyebrow center">Contacto</span>
+      <h2>Hablemos de tu próximo tejido</h2>
+      <p>Escríbenos directo, sin intermediarios. Nos encanta ayudarte a elegir.</p>
+    </div>
+    <div class="contact-cards">
+      <a class="contact-card" href="https://wa.me/573207174673?text=Hola%20Tejuncho%2C%20quiero%20más%20información%20😊" target="_blank" rel="noopener">
+        <span class="contact-ico wa-ico"></span>
+        <strong>WhatsApp</strong>
+        <span>320 717 4673</span>
+        <em>Respuesta directa y rápida</em>
+      </a>
+      <a class="contact-card" href="https://instagram.com/tejunchoaccesorios" target="_blank" rel="noopener">
+        <span class="contact-ico ig-ico"></span>
+        <strong>Instagram</strong>
+        <span>@tejunchoaccesorios</span>
+        <em>Mira nuestras últimas creaciones</em>
+      </a>
+      <a class="contact-card" href="https://www.facebook.com/profile.php?id=100075751887562" target="_blank" rel="noopener">
+        <span class="contact-ico fb-ico"></span>
+        <strong>Facebook</strong>
+        <span>@tejunchoaccesorios</span>
+        <em>Síguenos y comparte</em>
+      </a>
+    </div>
+  </section>
+
+  <!-- ====== REDES / CTA ====== -->
+  <section class="redes-cta" id="redes">
+    <div class="redes-inner">
+      <h2>Quédate y descubre el mundo Tejuncho</h2>
+      <p>Piezas nuevas, encargos y detalles hechos a mano cada semana.
+         Sigue nuestras redes y sé parte de la historia.</p>
+      <div class="redes-links">
+        <a class="btn btn-primary" href="https://instagram.com/tejunchoaccesorios" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btn-ghost light" href="https://www.facebook.com/profile.php?id=100075751887562" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="img/logo.png" alt="Tejuncho" />
+        <p>Tejidos & Accesorios · Hecho a mano con amor en Colombia.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explora</h4>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#personalizados">Personalizados</a>
+        <a href="#nosotros">Nuestra historia</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h4>Escríbenos</h4>
+        <a href="https://wa.me/573207174673" target="_blank" rel="noopener">WhatsApp 320 717 4673</a>
+        <a href="https://instagram.com/tejunchoaccesorios" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=100075751887562" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Tejuncho · Tejidos & Accesorios. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+
+  <!-- ====== BOTÓN FLOTANTE WHATSAPP ====== -->
+  <a class="wa-float" href="https://wa.me/573207174673?text=Hola%20Tejuncho%2C%20quiero%20más%20información%20😊"
+     target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <span class="wa-ico"></span>
+    <span class="wa-float-text">¿Hablamos?</span>
+  </a>
+
+  <!-- ====== CARRITO (DRAWER) ====== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras">
+    <div class="cart-header">
+      <h3>Tu carrito</h3>
+      <button class="cart-close" id="cartClose" aria-label="Cerrar carrito">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty">
+      <p>Tu carrito está vacío 🧺</p>
+      <a href="#catalogo" class="btn btn-primary" id="cartEmptyBtn">Ver catálogo</a>
+    </div>
+    <div class="cart-footer" id="cartFooter">
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">$0</strong></div>
+      <p class="cart-checkout-label">Elige cómo finalizar tu compra:</p>
+      <button class="btn btn-whatsapp full" id="checkoutWa">
+        <span class="wa-ico" aria-hidden="true"></span> Finalizar por WhatsApp
+      </button>
+      <button class="btn btn-primary full" id="checkoutForm">Finalizar en la página</button>
+      <small>Muchos prefieren WhatsApp para acordar el envío. ¡Tú eliges!</small>
+    </div>
+  </aside>
+
+  <!-- ====== MODAL CHECKOUT EN PÁGINA ====== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">&times;</button>
+      <div class="modal-body" id="modalBody">
+        <h3 id="modalTitle">Finalizar compra</h3>
+        <p class="modal-sub">Completa tus datos y confirmamos tu pedido.</p>
+        <form id="checkoutFormEl">
+          <div class="form-row">
+            <label>Nombre completo<input type="text" name="nombre" required /></label>
+            <label>Teléfono / WhatsApp<input type="tel" name="telefono" required /></label>
+          </div>
+          <label>Ciudad y país<input type="text" name="ciudad" required placeholder="Ej: Medellín, Colombia" /></label>
+          <label>Dirección de envío<input type="text" name="direccion" required /></label>
+          <label>Notas (opcional)<textarea name="notas" rows="2" placeholder="Color preferido, fecha en que lo necesitas..."></textarea></label>
+          <div class="modal-summary" id="modalSummary"></div>
+          <button type="submit" class="btn btn-primary full">Confirmar pedido</button>
+          <small>Recibiremos tu pedido y te contactaremos para coordinar el pago y el envío.</small>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== TOAST ====== -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
